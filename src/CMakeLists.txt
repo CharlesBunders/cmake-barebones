@@ -1,1 +1,1 @@
-add_executable(barebones.exe main.cpp)
+add_executable(barebones main.cpp)

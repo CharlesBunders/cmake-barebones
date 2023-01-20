@@ -2,11 +2,11 @@
 
 A minimal CMake project for C++.
 
-This project is useful as a quick starting point or for learning the basics of CMake.
+This project is useful as a quick starting point for a command line C++ project or for learning the basics of CMake.
 
 # Usage
 
-Clone the project then:
+Clone the project, then:
 
 ```sh
 mkdir build
@@ -15,15 +15,22 @@ cmake ..
 cmake --build .
 ```
 
-## Changing the projects name
+Should end up with an executable you can run under the build directory in:
+
+```sh
+./src/Debug/barebones.exe
+```
+
+## Changing the Projects Name
 
 Linux:
+(In the root directory before running cmake)
 ```sh
 grep -ElRZ 'barebones' CMakeLists.txt | xargs -0 -l sed -i -e 's/\bbarebones\b/YOURPROJECTNAME/g'
 ```
 
-Or just change the word "barbones" in the CMakeLists.txt in the root directory and
-the CMakeLists.txt file in the /src directory.
+Or just change the word "barebones" in the CMakeLists.txt in the root directory and
+the CMakeLists.txt file in the /src directory to whatever name you wish.
 
 # If New to CMake
 
@@ -37,8 +44,8 @@ To see what generators are available try:
 cmake --help
 ```
 
-There will likely be a default set for the system you are on.
-To explicitly set the generator try:
+There will likely be a default already set for the system you are on.
+However, to explicitly set different generators try:
 
 ```sh
 cmake -G "Visual Studio 17 2022"

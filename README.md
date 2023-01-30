@@ -18,7 +18,8 @@ cmake --build .
 Should end up with an executable you can run under the build directory in:
 
 ```sh
-./src/Debug/barebones.exe
+./src/Debug/barebones.exe  <-- Windows
+./src/barebones            <-- Linux
 ```
 
 ## Changing the Projects Name

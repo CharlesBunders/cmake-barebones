@@ -27,7 +27,7 @@ Should end up with an executable you can run under the build directory in:
 Linux:
 (In the root directory before running cmake)
 ```sh
-grep -ElRZ 'barebones' CMakeLists.txt | xargs -0 -l sed -i -e 's/\bbarebones\b/YOURPROJECTNAME/g'
+grep --include CMakeLists.txt -ElRZ 'barebones' | xargs -0 -l sed -i -e 's/\bbarebones\b/YOURPROJECTNAME/g'
 ```
 
 Or just change the word "barebones" in the CMakeLists.txt in the root directory and

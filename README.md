@@ -60,6 +60,12 @@ cmake -G "Visual Studio 17 2022" -A ARM
 cmake -G "Visual Studio 17 2022" -A ARM64
 ```
 
+A full example on Windows generating and building from a created build directory in the cloned folder:
+```sh
+cmake -G "Visual Studio 17 2022" -A x64 ..
+cmake --build . --config MINSIZEREL
+```
+
 Another file to be aware of is the CMakeCache.txt file. This will be in your
 build directory after running cmake. If you make changes and want to 
 generate your build files again just delete the CMakeCache.txt file.

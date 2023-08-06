@@ -65,6 +65,11 @@ A full example on Windows generating and building from a created build directory
 cmake -G "Visual Studio 17 2022" -A x64 ..
 cmake --build . --config MINSIZEREL
 ```
+Linux (static lib's):
+```sh
+cmake .. -D LINK_DEPS_STATIC=ON -D BUILD_SHARED_LIBS=FALSE 
+cmake --build . --config DEBUG
+```
 
 Another file to be aware of is the CMakeCache.txt file. This will be in your
 build directory after running cmake. If you make changes and want to 

@@ -49,15 +49,15 @@ There will likely be a default already set for the system you are on.
 However, to explicitly set different generators try:
 
 ```sh
-cmake -G "Visual Studio 17 2022"
+cmake -G "Visual Studio 17 2022" ..
 ```
 
 Also setting the architecture instead of using the default:
 ```sh
-cmake -G "Visual Studio 17 2022" -A Win32
-cmake -G "Visual Studio 17 2022" -A x64
-cmake -G "Visual Studio 17 2022" -A ARM
-cmake -G "Visual Studio 17 2022" -A ARM64
+cmake -G "Visual Studio 17 2022" -A Win32 ..
+cmake -G "Visual Studio 17 2022" -A x64 ..
+cmake -G "Visual Studio 17 2022" -A ARM ..
+cmake -G "Visual Studio 17 2022" -A ARM64 ..
 ```
 
 A full example on Windows generating and building from a created build directory in the cloned folder:
